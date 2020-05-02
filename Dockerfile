@@ -16,7 +16,7 @@ RUN apk -v --update add \
         mailcap \
         && \
     pip install --upgrade awscli s3cmd python-magic && \
-    apk -v --purge del py-pip 
+    apk -v --purge del py-pip  
 
 
 RUN apk add --no-cache git openssl py-pygments curl \
